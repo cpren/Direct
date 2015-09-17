@@ -40,11 +40,6 @@
   </block>
   <block type="procedures_callnoreturn" id="10" x="32" y="77">
     <mutation name="Sqaure"></mutation>
-    <next>
-      <block type="procedures_callnoreturn" id="11">
-        <mutation name="Reverse"></mutation>
-      </block>
-    </next>
   </block>
   <block type="procedures_defnoreturn" id="12" x="315" y="248">
     <mutation></mutation>
