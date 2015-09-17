@@ -1,82 +1,34 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defnoreturn" id="1" x="315" y="24">
-    <mutation></mutation>
-    <field name="NAME">Sqaure</field>
-    <statement name="STACK">
-      <block type="controls_repeat" id="2" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="3">
-            <field name="NUM">4</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="4">
-            <next>
-              <block type="robot_delay" id="5" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="6">
-                    <field name="NUM">2000</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_right" id="7">
-                    <next>
-                      <block type="robot_delay" id="8" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="9">
-                            <field name="NUM">1300</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </statement>
+  <block type="controls_repeat" id="2" inline="true" x="29" y="28">
+    <value name="TIMES">
+      <block type="math_number" id="3">
+        <field name="NUM">4</field>
       </block>
-    </statement>
-  </block>
-  <block type="procedures_callnoreturn" id="10" x="32" y="77">
-    <mutation name="Sqaure"></mutation>
-  </block>
-  <block type="procedures_defnoreturn" id="11" x="315" y="248">
-    <mutation></mutation>
-    <field name="NAME">Reverse</field>
-    <statement name="STACK">
-      <block type="controls_repeat" id="12" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="13">
-            <field name="NUM">4</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_reverse" id="14">
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="4">
+        <next>
+          <block type="robot_delay" id="5" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="6">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="15" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="16">
-                    <field name="NUM">2000</field>
-                  </block>
-                </value>
+              <block type="movement_right" id="7">
                 <next>
-                  <block type="movement_right" id="17">
-                    <next>
-                      <block type="robot_delay" id="18" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="19">
-                            <field name="NUM">1300</field>
-                          </block>
-                        </value>
+                  <block type="robot_delay" id="8" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="9">
+                        <field name="NUM">1300</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
   </block>
