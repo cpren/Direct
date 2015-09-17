@@ -28,38 +28,29 @@
     <mutation></mutation>
     <field name="NAME">Sqaure</field>
     <statement name="STACK">
-      <block type="controls_repeat" id="1" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="2">
-            <field name="NUM">4</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="3">
+      <block type="movement_forward" id="3">
+        <next>
+          <block type="robot_delay" id="4" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="5">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="4" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="5">
-                    <field name="NUM">2000</field>
-                  </block>
-                </value>
+              <block type="movement_right" id="6">
                 <next>
-                  <block type="movement_right" id="6">
-                    <next>
-                      <block type="robot_delay" id="7" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="8">
-                            <field name="NUM">1300</field>
-                          </block>
-                        </value>
+                  <block type="robot_delay" id="7" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="8">
+                        <field name="NUM">1300</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
   </block>
